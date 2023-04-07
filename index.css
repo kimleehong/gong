@@ -1,0 +1,533 @@
+/* 폰트 */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 노말라이즈 */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #666666;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* 커스텀 */
+
+body {
+  min-width: 1200px;
+}
+
+::selection {
+  background-color: #983b43;
+  color: white;
+}
+
+/* 탑바 */
+
+
+.top-bar {
+  position: fixed;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+  transition: height 0.5s;
+  background: url(https://www.gong-cha.co.kr/view/gongcha/images/common/header_bg.png) 0 1px repeat-x;
+  border-bottom: 1px solid #eeeeee;
+  z-index: 99;
+}
+
+.top-bar:hover {
+  height: 380px;
+}
+
+/* .top-bar > div {
+  height:111px;
+} */
+
+/* 탑바 메뉴 top-bar__menu */
+
+
+
+.top-bar__menu>ul>li>a {
+  padding: 0 30px;
+  font-size: 1.05rem;
+  position: relative;
+  text-align: center;
+}
+
+.top-bar__menu>ul ul {
+  margin-top: 10px;
+}
+
+.top-bar__menu>ul ul>li {
+  padding: 7px 0;
+  color: #cccccc;
+  font-size: 15px;
+}
+
+.top-bar__menu>ul ul>li:hover>a {
+  color: #cf3e58;
+
+}
+
+.top-bar__menu>ul>li>a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #cf3e58;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .3s;
+}
+
+.top-bar__menu>ul>li>a:hover::after {
+  width: 100%;
+}
+
+.ko {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* 탑바 SNS top-bar__sns */
+.top-bar__sns>ul>li>a {
+  margin: 0 9px;
+}
+
+.top-bar__sns>ul>li>a:hover {
+  color: #cf3e58;
+}
+
+/* 탑바 가맹점 문의 top-bar__franchisee */
+.top-bar__franchisee {
+  background-color: #392e2c;
+  padding: 20px 20px 5px 20px;
+  border-radius: 0 0 20px 20px;
+  height: 95px;
+}
+
+.top-bar__franchisee:hover {
+  background-color: #983b43;
+}
+
+.top-bar__franchisee>a>div>span {
+  line-height: 23px;
+  font-size: 1.1rem;
+}
+
+.top-bar__franchisee>a>div>span>img {
+  margin-right: 5px;
+  margin-bottom: -5px;
+
+}
+
+
+/* 배너 */
+
+.banner {
+  margin-top: 111px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 850px;
+}
+
+.swiper-slide>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-details {
+  position: absolute;
+  box-sizing: border-box;
+  right: 50%;
+  bottom: 110px;
+  margin-right: -600px;
+  border: 1px solid #cf3e58;
+  color: #983b43;
+  width: 230px;
+  height: 50px;
+}
+
+
+/* banner__page */
+.banner__page {
+  margin-top: -50px;
+}
+
+.banner__page>.swiper-pagination {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 1px !important;
+  right: 0;
+}
+
+.banner__page>.swiper-pagination>.swiper-pagination-bullet {
+  width: 400px;
+  height: 50px;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5px !important;
+  border-radius: 0;
+  opacity: 1;
+}
+
+.banner .swiper-pagination-bullet-active {
+  background-color: #983b43 !important;
+  color: white;
+}
+
+.banner .swiper-button-next,
+.banner .swiper-button-prev {
+  background-position: center;
+  height: 53px !important;
+
+}
+
+.banner .swiper-button-next {
+  background: url(http://www.gong-cha.co.kr/view/gongcha/images/common/next.png) no-repeat;
+  right: 50% !important;
+  margin-right: -600px;
+}
+
+.banner .swiper-button-prev {
+  background: url(http://www.gong-cha.co.kr/view/gongcha/images/common/prev.png) no-repeat;
+  left: 50% !important;
+  margin-left: -600px;
+}
+
+.banner .swiper-button-next::after,
+.banner .swiper-button-prev::after {
+  display: none;
+}
+
+
+
+/* section-1 */
+
+
+.section-1 {
+  width: 1200px;
+}
+
+
+/* first */
+
+.first__find {
+  width: 400px;
+  padding: 50px 40px;
+}
+
+.first__find {
+  background-color: #F5F4F2;
+}
+
+.find__search>input {
+  width: 265px;
+  height: 40px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.find__search>img {
+  right: 0;
+}
+
+.find__search>a {
+  background-color: #3B3230;
+}
+
+
+/* second */
+
+.order__content {
+  top: 60px;
+  left: 40px;
+}
+
+.order__content>div:nth-child(2) {
+  font-size: 0.95rem;
+}
+
+.order__content>div:last-child {
+  width: 90px;
+  border-bottom: 1px solid black;
+}
+
+.order__content>div:last-child:hover {
+  color: #C30E2E;
+  border-bottom: 1px solid #C30E2E;
+}
+
+
+/* section1 slider */
+
+.second__slide .swiper-container {
+  width: 800px;
+  height: 500px;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+
+.second__slide .swiper-container {
+  position: relative !important;
+
+}
+
+.second__slide .swiper-button-next,
+.second__slide .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+}
+
+.second__slide .swiper-button-next {
+  background: url(https://www.gong-cha.co.kr/view/gongcha/images/brandmain/brand_main_section4_next.gif) no-repeat;
+  top: 94.5%;
+  right: 0;
+}
+
+.second__slide .swiper-button-prev {
+  background: url(https://www.gong-cha.co.kr/view/gongcha/images/brandmain/brand_main_section4_prev.gif) no-repeat;
+  top: 84.2%;
+  left: 93.8%;
+}
+
+.second__slide .swiper-button-next::after,
+.second__slide .swiper-button-prev::after {
+  display: none;
+}
+
+
+/* third */
+.third__franchisee {
+  width: 400px;
+  height: 450px;
+  background-color: #EDE6D6;
+}
+
+.third__franchisee>div>span:first-child {
+  width: 100px;
+}
+
+.third__franchisee>div>span:nth-child(2) {
+  font-size: 15px;
+}
+
+.btn-franchisee {
+  background-color: #6D5547;
+  height: 50px;
+}
+
+.third-txt {
+  width: 100%;
+  height: 97px;
+  bottom: 0;
+  background-color: white;
+}
+
+.third-txt>span {
+  color: #C30F30;
+}
+
+.third-txt>div {
+  border-bottom: 1px solid gray;
+  font-size: 0.8rem;
+}
+
+
+/* section-2 */
+
+.section-2 {
+  width: 100%;
+  height: 471px;
+  min-width: 1200px;
+  background-color: #F5EEE8;
+}
+
+.tea-recipe {
+  width: 1200px;
+}
+
+.tea-recipe__tab>div {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+
+.recipe-img {
+  margin-right: 0;
+}
+
+.recipe-txt {
+  width: 600px;
+  left: 600px;
+}
+
+.recipe-txt>div:nth-child(3) {
+  font-size: 0.95rem;
+}
+
+
+.btn-gomenu {
+  width: 152px;
+  height: 35px;
+  color: #993B42;
+  border: 1px solid #993B42;
+}
+
+.recipe-tab-active {
+  color: #993B42;
+  border-bottom: 3px solid #993B42;
+}
+
+.tea-recipe__content>div>.recipe-txt>* {
+  margin-left: 0;
+
+}
+
+.tea-recipe__content>div>.recipe-txt> :nth-child(1),
+.tea-recipe__content>div>.recipe-img {
+  transition: margin-left 0.5s calc(0 * 0.1s), opacity 0.5s calc(0 * 0.1s);
+}
+
+.tea-recipe__content>div>.recipe-txt> :nth-child(2) {
+  transition: margin-left 0.5s calc(1 * 0.1s), opacity 0.5s calc(1 * 0.1s);
+}
+
+.tea-recipe__content>div>.recipe-txt> :nth-child(3) {
+  transition: margin-left 0.5s calc(2 * 0.1s), opacity 0.5s calc(2 * 0.1s);
+}
+
+.tea-recipe__content>div>.recipe-txt> :nth-child(4) {
+  transition: margin-left 0.5s calc(3 * 0.1s), opacity 0.5s calc(3 * 0.1s);
+}
+
+.tea-recipe__content>div.invisible>.recipe-img {
+  opacity: 0;
+  margin-left: -50px;
+}
+
+.tea-recipe__content>div.invisible>.recipe-txt>* {
+  opacity: 0;
+  margin-left: 50px;
+}
+
+
+/* footer */
+.footer {
+  position: relative;
+}
+
+.footer__logo {
+  background-color: #575757;
+  color: #B5B4B4;
+  width: 300px;
+  padding: 38px 38px 38px 0;
+}
+
+.footer::before,
+.footer::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+}
+
+.footer::before {
+  background-color: #575757;
+  left: 0;
+  z-index: -1;
+}
+
+.footer::after {
+  background-color: #F1F2F2;
+  right: 0;
+  z-index: -1;
+}
+
+.footer__logo>div:first-child {
+  width: 69px;
+}
+
+.footer__info {
+  background-color: #F1F2F2;
+  width: 900px;
+  padding: 38px;
+}
+
+.footer__info>div>ul,
+.footer__info>div:nth-child(3) {
+  margin-left: -10px;
+}
+
+.footer__info>div>ul>li {
+  position: relative;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #666666;
+}
+
+.footer__info>div>ul>li:nth-child(4) {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.footer__info>div>ul>li:not(li:first-child)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 14px;
+  background-color: #A4A4A4;
+  position: absolute;
+  top: 5px;
+  left: -1px;
+}
+
+.footer__info>div:nth-child(3)>span {
+  padding: 0 10px;
+  font-size: 13px;
+  position: relative;
+}
+
+.footer__info>div:nth-child(3)>span:not(span:first-child)::after {
+  content: "";
+  width: 1px;
+  height: 14px;
+  background-color: #A4A4A4;
+  position: absolute;
+  top: 1px;
+  left: -3px;
+}

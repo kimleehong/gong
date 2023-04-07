@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공차 모작 | 가시안이며 비상업적 용도로 사용되어집니다.</title>
+
+  <!-- 제이쿼리&테일윈드 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- 로컬링크 -->
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+
+</head>
+
+<body>
+  <div class="nanumgothic">
+    <div class="quick-menu fixed z-10 right-8 top-60 cursor-pointer">
+      <img src="https://www.gong-cha.co.kr/view/gongcha/images/brand/quick_img_off.png" alt="">
+    </div>
+    <header class="top-bar h-28 whitespace-nowrap font-bold">
+      <div class="mx-auto h-28 flex justify-center">
+        <div class="top-bar__icon self-center mr-3">
+          <a href=""><img src="https://www.gong-cha.co.kr/view/gongcha/images/common/logo.png" alt="">
+          </a>
+        </div>
+        <div class="top-bar__menu">
+          <ul class="flex h-full">
+            <li>
+              <a href="" class="flex h-full items-center">
+                <span class="en ml-2">Brand</span>
+                <span class="ko opacity-0 absolute">브랜드</span>
+              </a>
+              <ul class="flex items-center flex-col">
+                <li><a href="">브랜드 소개</a></li>
+                <li><a href="">공차의 약속</a></li>
+                <li><a href="">브랜드 아이덴티티</a></li>
+                <li><a href="">세계속의 공차</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="flex h-full items-center">
+                <span class="en">Menu</span>
+                <span class="ko opacity-0 absolute">메뉴</span>
+              </a>
+              <ul class="flex items-center flex-col">
+                <li><a href="">주문방법</a></li>
+                <li><a href="">음료</a></li>
+                <li><a href="">디저트</a></li>
+                <li><a href="">MD상품</a></li>
+                <li><a href="">티스토리</a></li>
+                <li><a href="">티레시피</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="flex h-full items-center">
+                <span class="en">Store</span>
+                <span class="ko opacity-0 absolute">매장</span>
+              </a>
+              <ul class="flex items-center flex-col">
+                <li><a href="">매장 찾기</a></li>
+                <li><a href="">가맹점 개설문의</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="flex h-full items-center">
+                <span class="en">Membership</span>
+                <span class="ko opacity-0 absolute">멤버십</span>
+              </a>
+              <ul class="flex items-center flex-col">
+                <li><a href="">NEW 공차 멤버십</a></li>
+                <li><a href="">공차 카드 & e-Gift</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="flex h-full items-center">
+                <span class="en">Benefit</span>
+                <span class="ko opacity-0 absolute">제휴 서비스</span>
+              </a>
+              <ul class="flex items-center flex-col">
+                <li><a href="">통신사 제휴</a></li>
+                <li><a href="">결제 서비스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="flex h-full items-center">
+                <span class="en">Event&News</span>
+                <span class="ko opacity-0 absolute">이벤트&뉴스</span>
+              </a>
+              <ul class="flex items-center flex-col">
+                <li><a href="">이벤트</a></li>
+                <li><a href="">공차소식</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="top-bar__sns">
+          <ul class="flex h-full">
+            <li class="flex"><a href="" class="self-center text-sm">공지사항</a></li>
+            <li class="flex"><a href="" class="self-center"><img
+                  src="https://www.gong-cha.co.kr/view/gongcha/images/common/btn_f.png" alt=""></a></li>
+            <li class="flex"><a href="" class="self-center"><img
+                  src="https://www.gong-cha.co.kr/view/gongcha/images/common/btn_i.png" alt=""></a></li>
+            <li class="flex"><a href="" class="self-center"><img
+                  src="https://www.gong-cha.co.kr/view/gongcha/images/common/btn_k.png" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="top-bar__franchisee text-white ml-6">
+          <a href="">
+            <div class="flex">
+              <span><img src="https://www.gong-cha.co.kr/view/gongcha/images/common/go_main_franchise_ico.png"
+                  alt=""></span>
+              <span>가맹점<br>개설문의</span>
+            </div>
+            <div>02-3276-9583</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="swiper-container overflow-hidden">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="https://www.gong-cha.co.kr/uploads/board/20210511/snW9VRiOJxuL0Tzm_20210511.jpg" alt="">
+            <a href="#" class="slide-details flex font-bold items-center justify-center">
+              <span class="mr-3">자세히 보기</span>
+              <span><img src="http://www.gong-cha.co.kr/view/gongcha/images/common/btn_arr_red.png" alt=""></span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://www.gong-cha.co.kr/uploads/board/20210415/fhg5VNc4ld78URFW_20210415.jpg" alt="">
+            <a href="#" class="slide-details flex font-bold items-center justify-center">
+              <span class="mr-3">자세히 보기</span>
+              <span><img src="http://www.gong-cha.co.kr/view/gongcha/images/common/btn_arr_red.png" alt=""></span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://www.gong-cha.co.kr/uploads/board/20210602/L9vVZog2fnY6hJP1_20210602.jpg" alt="">
+            <a href="#" class="slide-details flex font-bold items-center justify-center">
+              <span class="mr-3">자세히 보기</span>
+              <span><img src="http://www.gong-cha.co.kr/view/gongcha/images/common/btn_arr_red.png" alt=""></span>
+            </a>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+      </div>
+      <div class="banner__page flex font-bold justify-center">
+        <div class="swiper-pagination flex"></div>
+      </div>
+    </section>
+    <section class="section-1 mt-12 mx-auto">
+      <div class="section-1__first flex">
+        <div class="first__best">
+          <img src="http://www.gong-cha.co.kr/uploads/banner/20200915/o2DSQ9YWyp06egV3_20200915.jpg" alt="">
+        </div>
+        <div class="first__find flex flex-col justify-between">
+          <div class="text-2xl font-bold text-black">매장검색</div>
+          <div class="font-bold text-xl">공차 매장을 쉽고 빠르게<br> 찾아보세요.</div>
+          <div class="find__search flex flex-col relative">
+            <input type="text" placeholder="매장명 또는 주소를 입력하세요">
+            <img class="absolute"
+              src="http://www.gong-cha.co.kr/view/gongcha/images/brandmain/btn_main_store_search.gif" alt="">
+            <a href="#" class="block text-center text-white text-sm p-4 font-bold">매장검색하기</a>
+          </div>
+        </div>
+      </div>
+      <div class="section-1__second flex">
+        <div class="second__order relative">
+          <img src="http://www.gong-cha.co.kr/view/gongcha/images/brandmain/brand_main_section3_img.jpg" alt="">
+          <div class="order__content absolute text-black">
+            <div class="text-2xl font-bold">HOW TO ORDER 주문하기</div>
+            <div class="mt-5">공차는 취향에 맞게 토핑, 당도, 얼음량까지<br>맞춤주문 가능합니다.</div>
+            <div class="flex items-center text-sm font-bold mt-8 cursor-pointer">
+              <span class="mr-3">자세히 보기</span>
+              <span><img src="http://www.gong-cha.co.kr/view/gongcha/images/common/btn_detail_arr_black.png"
+                  alt=""></span>
+            </div>
+          </div>
+        </div>
+        <div class="second__slide">
+          <div class="swiper-container overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://www.gong-cha.co.kr/uploads/banner/20201023/rs2lUpCJPEA0byVB_20201023.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://www.gong-cha.co.kr/uploads/banner/20210526/yzf70qoMGgaLd1sD_20210526.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-1__third flex">
+        <div class="third__franchisee px-10 pt-14">
+          <div class="text-2xl font-bold text-black mb-12">공차 가맹점 개설문의</div>
+          <div class="mb-12 flex cursor-pointer">
+            <span class="text-xl font-bold text-black">개설안내</span>
+            <span>공차만의 프랜차이즈 운영<br>노하우로 안정된 창업을 이루세요.</span>
+          </div>
+          <div class="mb-12 flex cursor-pointer">
+            <span class="text-xl font-bold text-black">FAQ</span>
+            <span>가맹점 개설과 관련한<br>자주 묻는 질문입니다.</span>
+          </div>
+          <div class="btn-franchisee w-full text-white flex items-center justify-center cursor-pointer">내용보기</div>
+        </div>
+        <div class="third__giftcard relative">
+          <img class="cursor-pointer"
+            src="https://www.gong-cha.co.kr/uploads/banner/20200326/dLbIKv0l8oaFkhXz_20200326.jpg" alt="">
+          <div class="third-txt absolute flex items-center justify-around font-bold">
+            <span>문화상품권 결제 서비스 안내</span>
+            <div class="flex items-center cursor-pointer">
+              <span class="mr-3">자세히 보기</span>
+              <span><img src="http://www.gong-cha.co.kr/view/gongcha/images/common/btn_detail_arr_black.png"
+                  alt=""></span>
+            </div>
+          </div>
+        </div>
+        <div class="third__app relative">
+          <img class="cursor-pointer"
+            src="https://www.gong-cha.co.kr/uploads/banner/20210621/rCb5ojMsdv3XA2tQ_20210621.png" alt="">
+          <div class="third-txt absolute flex items-center justify-around font-bold">
+            <span>NEW 공차 멤버십 앱 안내</span>
+            <div class="flex items-center cursor-pointer">
+              <span class="mr-3">자세히 보기</span>
+              <span><img src="http://www.gong-cha.co.kr/view/gongcha/images/common/btn_detail_arr_black.png"
+                  alt=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-2">
+      <div class="tea-recipe mx-auto pt-16">
+        <div class="tea-recipe__head flex justify-between font-bold">
+          <div class="text-2xl text-black">공차 티 레시피</div>
+          <div class="tea-recipe__tab flex">
+            <div class="tab-original recipe-tab-active" id="original">오리지널 티</div>
+            <div class="tab-milktea" id="milktea">밀크티</div>
+            <div class="tab-foam" id="foam">밀크폼&치즈폼</div>
+            <div class="tab-fruittea" id="fruittea">과일 그린티</div>
+          </div>
+        </div>
+        <div class="tea-recipe__content mx-auto mt-16">
+          <div class="tea-recipe__original flex whitespace-nowrap absolute">
+            <div class="recipe-img">
+              <img src="http://www.gong-cha.co.kr/view/gongcha/images/brandmain/brand_main_recipe_img1.jpg" alt="">
+            </div>
+            <div class="recipe-txt absolute">
+              <div class="text-4xl font-bold text-black">TEA RECIPE - 티 레시피</div>
+              <div class="text-2xl font-bold mt-3">오리지널 티 - Original Tea</div>
+              <div class="mt-4">티백이나 가루가 아닌 황실에 바치던 잎차만 골라 1도 1초도 어기지 않고 차마다<br>다른 황금률로 우려 한 잔 한 잔 부드러움을 더해 만듭니다.</div>
+              <div class="btn-gomenu flex items-center justify-center cursor-pointer mt-8">
+                <span class="mr-3 text-sm font-bold">메뉴 보러가기</span>
+                <span><img src="http://www.gong-cha.co.kr/view/gongcha/images/common/btn_arr_red.png" alt=""></span>
+              </div>
+            </div>
+          </div>
+          <div class="tea-recipe__milktea flex whitespace-nowrap opacity-0 invisible absolute">
+            <div class="recipe-img">
+              <img src="https://www.gong-cha.co.kr/view/gongcha/images/brandmain/brand_main_recipe_img2.jpg" alt="">
+            </div>
+            <div class="recipe-txt absolute">
+              <div class="text-4xl font-bold text-black">TEA RECIPE - 티 레시피</div>
+              <div class="text-2xl font-bold mt-3">밀크티 - Milk Tea</div>
+              <div class="mt-4">최적의 자연이 키워낸 입차만 골라 각 차종에 맞는 황금률로 우려 담백한 우유와<br>허니, 카라멜 등 새로운 맛을 더해 만듭니다.</div>
+              <div class="btn-gomenu flex items-center justify-center cursor-pointer mt-8">
+                <span class="mr-3 text-sm font-bold">메뉴 보러가기</span>
+                <span><img src="http://www.gong-cha.co.kr/view/gongcha/images/common/btn_arr_red.png" alt=""></span>
+              </div>
+            </div>
+          </div>
+          <div class="tea-recipe__foam flex whitespace-nowrap opacity-0 invisible absolute">
+            <div class="recipe-img">
+              <img src="https://www.gong-cha.co.kr/view/gongcha/images/brandmain/brand_main_recipe_img4.jpg" alt="">
+            </div>
+            <div class="recipe-txt absolute">
+              <div class="text-4xl font-bold text-black">TEA RECIPE - 티 레시피</div>
+              <div class="text-2xl font-bold mt-3">밀크폼&치즈폼 – Milk Foam & Cheese Foam</div>
+              <div class="mt-4">프리미엄 잎차만 골라 차마다 다른 황금률로 우려<br>달콤짭조름한 밀크폼 또는 치즈폼을 더해 만듭니다.</div>
+              <div class="btn-gomenu flex items-center justify-center cursor-pointer mt-8">
+                <span class="mr-3 text-sm font-bold">메뉴 보러가기</span>
+                <span><img src="http://www.gong-cha.co.kr/view/gongcha/images/common/btn_arr_red.png" alt=""></span>
+              </div>
+            </div>
+          </div>
+          <div class="tea-recipe__fruittea flex whitespace-nowrap opacity-0 invisible absolute">
+            <div class="recipe-img">
+              <img src="https://www.gong-cha.co.kr/view/gongcha/images/brandmain/brand_main_recipe_img5.jpg" alt="">
+            </div>
+            <div class="recipe-txt absolute">
+              <div class="text-4xl font-bold text-black">TEA RECIPE - 티 레시피</div>
+              <div class="text-2xl font-bold mt-3">과일 그린티 – Fruit Green Tea</div>
+              <div class="mt-4">찻잎의 푸름을 간직한 녹차만 골라 최적의 온도 89℃로 우려<br>달콤상큼한 과일을 더해 만듭니다.</div>
+              <div class="btn-gomenu flex items-center justify-center cursor-pointer mt-8">
+                <span class="mr-3 text-sm font-bold">메뉴 보러가기</span>
+                <span><img src="http://www.gong-cha.co.kr/view/gongcha/images/common/btn_arr_red.png" alt=""></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer flex justify-center">
+      <div class="footer__logo flex items-end justify-end text-xs whitespace-nowrap">
+        <div class="mr-5"><img src="https://www.gong-cha.co.kr/view/gongcha/images/common/ft_logo.png" alt=""></div>
+        <div class="flex items-end">(C)GONGCHA KOREA CO.,LTD<br>ALL RIGHTS RESERVED.</div>
+      </div>
+      <div class="footer__info whitespace-nowrap">
+        <div class="info-list mb-5">
+          <ul class="flex font-bold">
+            <li>회사소개</li>
+            <li>제휴/제안</li>
+            <li>고객센터</li>
+            <li>개인정보처리방침</li>
+            <li>이메일무단수집거부</li>
+            <li>HOT-LINE</li>
+            <li>사이트맵</li>
+          </ul>
+        </div>
+        <div class="info-call flex items-center mb-2">
+          <span class="font-bold mr-2">고객센터</span>
+          <span class="mr-1"><img src="https://www.gong-cha.co.kr/view/gongcha/images/common/ico_tell.png"
+              alt=""></span>
+          <span class="font-bold mr-2">02-779-7758</span>
+          <span class="text-xs">(운영시간 오전 9시~ 오후 6시 / 주말 및 공휴일 휴무)</span>
+        </div>
+        <div>
+          <span class="text-sm">서울 종로구 종로 47(공평동, 7층)</span>
+          <span class="text-sm">㈜공차코리아 대표이사 김의열</span>
+          <span class="text-sm">사업자등록번호 214-88-84534</span>
+          <span class="text-sm">통신판매번호: 2020-서울종로-0966</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
